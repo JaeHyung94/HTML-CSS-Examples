@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+      .box{
+          width: 500px;
+          height: 500px;
+          background-color: pink;
+          animation: 5s scaleandrotatesquare infinite ease-in-out;
+        }
+        /* @keyframes scaleandrotatesquare {
+            from{
+                transform: none;
+            }
+            to{
+                transform: rotate(1turn) scale(0.5, 0.5);
+            }
+        } */
+        @keyframes scaleandrotatesquare {
+            0%{
+                transform: none;
+            }
+            50%{
+                transform: rotate(1turn) scale(0.5, 0.5);
+                color: green;
+            }
+            100%{
+                transform: none;
+                color: red;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box">Hello World!</div>
+</body>
+</html>
